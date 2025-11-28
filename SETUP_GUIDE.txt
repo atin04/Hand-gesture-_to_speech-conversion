@@ -1,0 +1,97 @@
+================================================================================
+  SIGN LANGUAGE TO TEXT - QUICK SETUP GUIDE FOR VS CODE
+================================================================================
+
+STEP 1: PREREQUISITES
+--------------------
+Make sure you have installed:
+✓ Node.js (version 16 or higher) - Download from: https://nodejs.org
+✓ Visual Studio Code - Download from: https://code.visualstudio.com
+✓ A working webcam
+
+
+STEP 2: OPEN PROJECT IN VS CODE
+--------------------------------
+1. Launch Visual Studio Code
+2. Click: File → Open Folder
+3. Select the "sign-language-app" folder
+4. Click "Select Folder"
+
+
+STEP 3: INSTALL DEPENDENCIES
+-----------------------------
+1. Open Terminal in VS Code:
+   - Click: Terminal → New Terminal
+   - OR press: Ctrl + ` (backtick key)
+
+2. Type this command and press Enter:
+
+   npm install
+
+3. Wait for installation to complete (2-3 minutes)
+
+
+STEP 4: START THE APPLICATION
+------------------------------
+1. In the same terminal, type:
+
+   npm run dev
+
+2. You'll see output like:
+
+   VITE v5.4.8  ready in 500 ms
+
+   ➜  Local:   http://localhost:5173/
+   ➜  Network: use --host to expose
+
+3. Hold Ctrl (or Cmd on Mac) and click the URL
+   OR
+   Open your browser and go to: http://localhost:5173
+
+
+STEP 5: USE THE APPLICATION
+----------------------------
+1. Click "Start Camera" button
+2. Allow camera permission when prompted
+3. Show your hand in the video feed
+4. Make ASL alphabet signs (hold for 1 second each)
+5. Watch letters appear in the text area!
+
+
+COMMANDS REFERENCE
+------------------
+npm install          → Install all dependencies
+npm run dev          → Start development server
+npm run build        → Build for production
+npm run preview      → Preview production build
+
+
+TROUBLESHOOTING
+---------------
+Problem: "npm command not found"
+Solution: Install Node.js from https://nodejs.org
+
+Problem: Port 5173 already in use
+Solution: Run: npm run dev -- --port 3000
+
+Problem: Camera not working
+Solution:
+  - Allow camera permissions in browser
+  - Close other apps using the camera
+  - Refresh the page
+
+Problem: Dependencies won't install
+Solution:
+  - Delete node_modules folder
+  - Delete package-lock.json
+  - Run: npm install
+
+
+NEED HELP?
+----------
+Check the README.md file for detailed documentation.
+
+
+================================================================================
+Ready to go! Run "npm run dev" and start recognizing sign language!
+================================================================================
